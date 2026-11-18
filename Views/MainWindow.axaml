@@ -1,0 +1,37 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="ColeccionApp.Views.MainWindow"
+        Title="Mi Colección de Figuras y Videojuegos"
+        Width="980" Height="560" MinWidth="820" MinHeight="480">
+  <Grid ColumnDefinitions="320,*" Margin="12">
+    <StackPanel Grid.Column="0" Spacing="6" Margin="0,0,12,0">
+      <TextBlock Text="Datos del producto" FontWeight="Bold" FontSize="16"/>
+      <TextBlock Text="Nombre *"/>
+      <TextBox x:Name="TxtNombre"/>
+      <TextBlock Text="Tipo *"/>
+      <ComboBox x:Name="CmbTipo" HorizontalAlignment="Stretch"/>
+      <TextBlock Text="Franquicia o plataforma"/>
+      <TextBox x:Name="TxtFranquicia"/>
+      <TextBlock Text="Precio *"/>
+      <TextBox x:Name="TxtPrecio" Watermark="0.00"/>
+      <TextBlock Text="Fecha de adquisición *"/>
+      <DatePicker x:Name="DpFecha"/>
+      <TextBlock Text="Estado *"/>
+      <ComboBox x:Name="CmbEstado" HorizontalAlignment="Stretch"/>
+      <TextBlock Text="Notas"/>
+      <TextBox x:Name="TxtNotas" AcceptsReturn="True" Height="55"/>
+      <WrapPanel Margin="0,6,0,0">
+        <Button x:Name="BtnGuardar" Content="Guardar" Click="BtnGuardar_Click" Margin="0,0,6,6"/>
+        <Button x:Name="BtnActualizar" Content="Actualizar" Click="BtnActualizar_Click" Margin="0,0,6,6"/>
+        <Button x:Name="BtnEliminar" Content="Eliminar" Click="BtnEliminar_Click" Margin="0,0,6,6"/>
+        <Button x:Name="BtnLimpiar" Content="Limpiar" Click="BtnLimpiar_Click" Margin="0,0,6,6"/>
+      </WrapPanel>
+      <TextBlock x:Name="TxtMensaje" TextWrapping="Wrap" FontWeight="SemiBold"/>
+    </StackPanel>
+
+    <DockPanel Grid.Column="1">
+      <TextBlock DockPanel.Dock="Top" Text="Colección" FontWeight="Bold" FontSize="16" Margin="0,0,0,6"/>
+      <ListBox x:Name="LstProductos" SelectionChanged="LstProductos_SelectionChanged"/>
+    </DockPanel>
+  </Grid>
+</Window>
