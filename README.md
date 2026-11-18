@@ -75,17 +75,7 @@ dotnet run
 - **CRUD:** en `Data/ProductoDAO.cs`, con comandos parametrizados y bloques `using`.
 - **Inicialización:** `Database.Inicializar()` ejecuta `CREATE TABLE IF NOT EXISTS`.
 
-## 8. Evidencias de funcionamiento
-_(Agrega las capturas en `evidencias/` y reemplaza los nombres.)_
 
-| # | Prueba | Captura | Resultado |
-|---|---|---|---|
-| 1 | Registro | ![](evidencias/01-registro.png) | _Describe qué hiciste y qué ocurrió._ |
-| 2 | Consulta | ![](evidencias/02-consulta.png) | |
-| 3 | Actualización | ![](evidencias/03-actualizacion.png) | |
-| 4 | Eliminación | ![](evidencias/04-eliminacion.png) | |
-| 5 | Validación | ![](evidencias/05-validacion.png) | |
-| 6 | Persistencia | ![](evidencias/06-persistencia.png) | |
 
-## 9. Problemas encontrados y soluciones
+## 8. Problemas encontrados y soluciones
  el precio con coma decimal fallaba al convertirse, y se resolvió reemplazando la coma por punto y usando `CultureInfo.InvariantCulture`; o el `DataGrid` requería un paquete aparte, y se usó un `ListBox`.)_
