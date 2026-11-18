@@ -2,7 +2,7 @@
 
 ## 1. Información general
 - **Proyecto:** ColeccionApp
-- **Estudiante:** _(tu nombre)_
+- **Estudiante:**STEVEN ANDRES AGAMEZ OROZCO
 - **Descripción:** aplicación de escritorio para registrar y administrar una colección personal de figuras y videojuegos.
 - **Problema que resuelve:** llevar el control de lo que se tiene, cuánto costó, cuándo se adquirió y en qué estado está.
 - **Objetivo:** aplicar POO, Avalonia UI y ADO.NET con SQLite en un CRUD completo.
@@ -88,4 +88,4 @@ _(Agrega las capturas en `evidencias/` y reemplaza los nombres.)_
 | 6 | Persistencia | ![](evidencias/06-persistencia.png) | |
 
 ## 9. Problemas encontrados y soluciones
-_(Escribe aquí al menos uno real que hayas tenido. Ejemplos: el precio con coma decimal fallaba al convertirse, y se resolvió reemplazando la coma por punto y usando `CultureInfo.InvariantCulture`; o el `DataGrid` requería un paquete aparte, y se usó un `ListBox`.)_
+ el precio con coma decimal fallaba al convertirse, y se resolvió reemplazando la coma por punto y usando `CultureInfo.InvariantCulture`; o el `DataGrid` requería un paquete aparte, y se usó un `ListBox`.)_
